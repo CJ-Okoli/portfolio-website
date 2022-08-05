@@ -91,3 +91,31 @@ section{
         margin: 0 -35px 0 35px;
     }
 }
+
+section{
+    display: grid;
+	place-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* margin: 0 auto; */
+    /* background: #A0C5E8; */
+    /* padding: 10px 0; */
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
