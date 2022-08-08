@@ -25,9 +25,6 @@
 			</ul>
 		</div >
 	</div>
-
-	<header>
-	</header>
 	
 	<div class="header">
 		<div class="logo">
@@ -42,6 +39,11 @@
 			<li class="list-content"><a href="#contact-me">Contact Me</a></li>
 			<!-- <li class="list-content"><a href="">Dark Mode</a></li> -->
 		</ul>
+		<div class="menu" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
 	</div>
 
 	<div class="typing">
@@ -75,27 +77,53 @@
 
 	<section id="skills">
 		<h2>Skills</h2>
-		<div class="skills">
-			<div class="frontend-skills">
-				<h4>Frontend Skills</h4>
-				<ul>
-					<li>HTML<img src="images\html.png" alt=""></li>
-					<li>CSS<img src="images\css-3.png" alt=""></li>
-					<li>JavaScript<img src="images\java-script.png" alt=""></li>
-					<li>React.js<img src="images\react.png" alt=""></li>
-					<li>Next.js<img src="images\nextjs-icon.png" alt=""></li>
-				</ul>
+		<div class="skills-container">
+			<div class="">
+				<h3>Frontend Skills</h3><br>
+				<div class="front-skills">
+					<div class="skills-list">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>React.js</li>
+							<li>Next.js</li>
+						</ul>
+					</div>
+					<div class="skills-logo">
+						<ul>
+							<li><img src="images\html.png" alt=""></li>
+							<li><img src="images\css-3.png" alt=""></li>
+							<li><img src="images\java-script.png" alt=""></li>
+							<li><img src="images\react.png" alt=""></li>
+							<li><img src="images\nextjs-icon.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
-			<div class="backend-skills">
-				<h4>Backend Skills</h4>
-				<ul>
-					<li>MongoDB<img src="images\mongo.png" alt=""></li>
-					<li>Express<img src="images\express.png" alt=""></li>
-					<li>Node.js<img src="images\nodejs.png" alt=""></li>
-					<li>PHP<img src="images\php.png" alt=""></li>
-					<li>MySQL<img src="images\mysql.png" alt=""></li>
-				</ul>
+			<div class="">
+				<h3>Backend Skills</h3><br>
+				<div class="back-skills">
+					<div class="skills-logo">
+						<ul>
+							<li><img src="images\mongo.png" alt=""></li>
+							<li><img src="images\express.png" alt=""></li>
+							<li><img src="images\nodejs.png" alt=""></li>
+							<li><img src="images\php.png" alt=""></li>
+							<li><img src="images\mysql.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="skills-list">
+						<ul>
+							<li>MongoDB</li>
+							<li>Express</li>
+							<li>Node.js</li>
+							<li>PHP</li>
+							<li>MySQL</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -104,14 +132,14 @@
 		<h2>Portfolio</h2>
 		<div class="projects">
 			<div class="task1">
-				<a target="_blank" href="https://safe-ridge-96737.herokuapp.com/catalog">
+				<a target="_blank" href="https://cj-okoli-library.herokuapp.com/">
 					<img id="project-img" src="images\library.jpg" alt=""><br>
 					Library Catalog built with the Node
 				</a>
 			</div>
 
 			<div class="task2">
-				<a target="_blank" href="https://stormy-caverns-60490.herokuapp.com/">
+				<a target="_blank" href="https://cj-okoli-clubhouse.herokuapp.com/">
 					<img id="project-img" src="images\clubhouse.png" alt=""><br>
 					Anonymous Posts Clubhouse built with Node
 				</a>
@@ -146,6 +174,12 @@
 		<p>&copy; Okoli CJ</p>
 
 	</footer>
+
+	<script>
+		function myFunction(x) {
+		  x.classList.toggle("change");
+		}
+	</script>
 
 </body>
 </html>
