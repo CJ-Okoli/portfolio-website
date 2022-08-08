@@ -39,11 +39,27 @@
 			<li class="list-content"><a href="#contact-me">Contact Me</a></li>
 			<!-- <li class="list-content"><a href="">Dark Mode</a></li> -->
 		</ul>
-		<div class="menu" onclick="myFunction(this)">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
+
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">
+				Options
+				<!-- <div onclick="menuIcon(this)" class="menu" >
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div> -->
+			</button>
+			<div id="myDropdown" class="dropdown-content">
+			  <a href="#">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#skills">Skills</a>
+			  <a href="#portfolio">Portfolio</a>
+			  <a href="#contact-me">Contact</a>
+			</div>
 		</div>
+
+		
+		
 	</div>
 
 	<div class="typing">
@@ -176,8 +192,27 @@
 	</footer>
 
 	<script>
-		function myFunction(x) {
+		function menuIcon(x) {
 		  x.classList.toggle("change");
+		}
+
+		/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("change");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('change')) {
+						openDropdown.classList.remove('change');
+					}
+				}
+			}
 		}
 	</script>
 
