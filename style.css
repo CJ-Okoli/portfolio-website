@@ -534,6 +534,7 @@ ul{
 
     .wrapper .dynamic-txts{
         padding-left: 0;
+        height: 2.5em;
     }
 
     .static-txt{
@@ -561,13 +562,24 @@ ul{
 
     .contact {
         display: block;
-        width: 100%;   
-           
+        width: 100%;      
     }
     
     .contact img{
-        height: 5em;
-        width: 5em;   
+        height: 3em;
+        width: 3em;   
+    }
+
+    .logo h1{
+        font-size: 1.5em;
+    }
+
+    .dynamic-txts li{
+        font-size: 1.8em;
+    }
+
+    .headshot{
+        width: 75%;
     }
 }
 
